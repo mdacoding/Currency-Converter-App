@@ -1,0 +1,159 @@
+/* Larger than mobile screen */
+@media (min-width: 40.0rem) {}
+
+/* Larger than tablet screen */
+@media (min-width: 80.0rem) {}
+
+/* Larger than desktop screen */
+@media (min-width: 120.0rem) {}
+
+/* montserrat-regular - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/montserrat-v25-latin-regular.eot');
+    /* IE9 Compat Modes */
+    src: url('../fonts/montserrat-v25-latin-regular.eot?#iefix') format('embedded-opentype'),
+        /* IE6-IE8 */
+        url('../fonts/montserrat-v25-latin-regular.woff2') format('woff2'),
+        /* Super Modern Browsers */
+        url('../fonts/montserrat-v25-latin-regular.woff') format('woff'),
+        /* Modern Browsers */
+        url('../fonts/montserrat-v25-latin-regular.ttf') format('truetype'),
+        /* Safari, Android, iOS */
+        url('../fonts/montserrat-v25-latin-regular.svg#Montserrat') format('svg');
+    /* Legacy iOS */
+}
+
+/* montserrat-500 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../fonts/montserrat-v25-latin-500.eot');
+    /* IE9 Compat Modes */
+    src: url('../fonts/montserrat-v25-latin-500.eot?#iefix') format('embedded-opentype'),
+        /* IE6-IE8 */
+        url('../fonts/montserrat-v25-latin-500.woff2') format('woff2'),
+        /* Super Modern Browsers */
+        url('../fonts/montserrat-v25-latin-500.woff') format('woff'),
+        /* Modern Browsers */
+        url('../fonts/montserrat-v25-latin-500.ttf') format('truetype'),
+        /* Safari, Android, iOS */
+        url('../fonts/montserrat-v25-latin-500.svg#Montserrat') format('svg');
+    /* Legacy iOS */
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    border: none;
+    outline: none;
+}
+
+body {
+    background-color: #a587f8;
+}
+
+.wrapper {
+    width: 90%;
+    max-width: 25em;
+    background-color: #ffffff;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    padding: 2em;
+    border-radius: 0.8em;
+}
+
+.details {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.icon {
+    width: 9.37em;
+}
+
+.title {
+    font-size: 1.6em;
+    text-transform: uppercase;
+    margin-bottom: 1em;
+}
+
+label {
+    display: block;
+    font-weight: 600;
+}
+
+input#amount {
+    font-weight: 400;
+    font-size: 1.2em;
+    display: block;
+    width: 100%;
+    border-bottom: 2px solid #020024;
+    color: #7a789d;
+    margin-bottom: 2em;
+    padding: 0.5em;
+}
+
+input#amount:focus {
+    color: #9873fe;
+    border-color: #9873fe;
+}
+
+.dropdown {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1em;
+}
+
+select {
+    width: 100%;
+    padding: 0.6em;
+    font-size: 1em;
+    border-radius: 0.2em;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-repeat: no-repeat;
+    background-position: right 15px top 50%, center;
+    background-size: 20px 20px;
+    background-color: #5722e9;
+    color: #ffffff;
+}
+
+select option {
+    background-color: #ffffff;
+    color: #04021b;
+}
+
+button {
+    font-size: 1em;
+    width: 100%;
+    background-color: #9873fe;
+    padding: 1em 0;
+    margin-top: 2em;
+    border-radius: 0.3em;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+#result {
+    font-size: 1.2em;
+    text-align: center;
+    margin-top: 1em;
+    color: #03021b;
+    background-color: #e5dbff;
+    padding: 0.8em 0;
+}
